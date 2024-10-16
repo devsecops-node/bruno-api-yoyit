@@ -1,0 +1,18 @@
+meta {
+  name: GetStatusProfile
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: https://api-dev.joyit.io/graphql/recruitment/v1
+  body: graphql
+  auth: none
+}
+
+body:graphql {
+  query GetStatusProfile {
+    GetStatusProfile(user_id: "158038af-5aa0-8005-a26e-a55e546cde8d")
+  }
+  
+}
